@@ -10,7 +10,9 @@ for filename in required:
     p=ROOT/filename
     assert p.is_file(), f"Falta {filename}"
     if p.suffix in {'.png','.jpg'}: assert p.stat().st_size>1000, f"Imagen vacía: {filename}"
-assert not (ROOT/'CNAME').exists(), "No conectar el dominio público en el laboratorio"
+if (ROOT/'CNAME').exists():
+    domain = (ROOT/'CNAME').read_text(encoding='utf-8').strip()
+    assert domain == 'puconcreativo.cl', f'Dominio personalizado inesperado: {domain}'
 for filename in ['sitio.json','agenda.json','noticias.json']:
     with (ROOT/'content'/filename).open(encoding='utf8') as f: json.load(f)
 assert isinstance(json.loads((ROOT/'content'/'agenda.json').read_text()),list)
