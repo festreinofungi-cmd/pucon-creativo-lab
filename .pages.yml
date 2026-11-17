@@ -1,0 +1,106 @@
+media:
+  - name: imagenes
+    label: Imágenes del sitio
+    input: assets/uploads
+    output: /assets/uploads
+    categories: [image]
+    rename: safe
+  - name: documentos
+    label: Documentos públicos
+    input: documentos
+    output: /documentos
+    categories: [document]
+    rename: safe
+content:
+  - name: sitio
+    label: Datos generales
+    type: file
+    path: content/sitio.json
+    format: json
+    fields:
+      - name: introduccion
+        label: Presentación breve
+        type: text
+        required: true
+      - name: contacto
+        label: Correo institucional (opcional)
+        type: string
+      - name: instagram
+        label: URL de Instagram (opcional)
+        type: string
+      - name: informe
+        label: URL del informe del mapeo
+        type: string
+  - name: agenda
+    label: Agenda común
+    type: file
+    path: content/agenda.json
+    format: json
+    list: true
+    fields:
+      - name: titulo
+        label: Título de actividad
+        type: string
+        required: true
+      - name: fecha
+        label: Fecha visible (ej. 15 de marzo de 2027)
+        type: string
+        required: true
+      - name: lugar
+        label: Lugar
+        type: string
+      - name: resumen
+        label: Descripción breve
+        type: text
+        required: true
+      - name: categoria
+        label: Categoría
+        type: select
+        options:
+          values:
+            - name: encuentros
+              label: Encuentros
+            - name: formacion
+              label: Formación
+            - name: convocatorias
+              label: Convocatorias
+      - name: enlace
+        label: URL de inscripción/información (opcional)
+        type: string
+      - name: publicado
+        label: Mostrar en el sitio
+        type: boolean
+  - name: noticias
+    label: Noticias
+    type: file
+    path: content/noticias.json
+    format: json
+    list: true
+    fields:
+      - name: slug
+        label: Identificador para URL (sin espacios)
+        type: string
+        required: true
+        pattern: '^[a-z0-9-]+$'
+      - name: titulo
+        label: Título
+        type: string
+        required: true
+      - name: fecha
+        label: Fecha visible
+        type: string
+        required: true
+      - name: resumen
+        label: Resumen
+        type: text
+        required: true
+      - name: contenido
+        label: Cuerpo de la noticia (texto)
+        type: text
+        required: true
+      - name: imagen
+        label: Imagen (opcional)
+        type: image
+      - name: publicado
+        label: Mostrar en el sitio
+        type: boolean

@@ -1,0 +1,18 @@
+name: Verificar prototipo
+
+on:
+  push:
+    branches: [main, 'diseno/**']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar estructura y datos
+        run: python3 scripts/validar.py
