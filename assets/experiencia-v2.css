@@ -1,0 +1,149 @@
+/* Pucón Creativo — evolución editorial y de experiencia
+   Capa sobre el sistema visual existente. Identidad gráfica original preservada. */
+
+:root {
+  --ink-strong:#1b2459;
+  --paper-soft:#fffaf8;
+  --accent-soft:#fce8ee;
+  --edge-soft:#e6d6db;
+}
+
+html { scroll-padding-top:108px }
+body { -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility }
+a,button { -webkit-tap-highlight-color:transparent }
+a:focus-visible,button:focus-visible { outline:3px solid #b42667;outline-offset:4px }
+[hidden] { display:none!important }
+.skip-link {position:fixed;left:14px;top:-100px;z-index:1000;background:#fff;color:var(--navy);font-weight:800;padding:12px 18px;border:2px solid var(--navy);border-radius:6px}
+.skip-link:focus {top:12px}
+.container {max-width:1220px}
+.top-note {letter-spacing:.16em;font-size:10px;padding:11px 20px}
+header {box-shadow:0 9px 25px #1b24590a}
+nav {min-height:88px}
+.brand {letter-spacing:-.04em}
+.brand small {letter-spacing:.105em}
+.links a {position:relative}
+.links a:not(.nav-cta)::after {content:"";position:absolute;height:2px;background:var(--pinkh);bottom:-7px;left:0;width:0;transition:width .2s}
+.links a:hover::after,.links a:focus-visible::after {width:100%}
+.links .nav-cta {background:var(--pink);color:#1b2459;padding:13px 19px}
+.links .nav-cta:hover {background:#f4a6c0;color:var(--navy)}
+.banner img {max-height:310px;height:auto;object-fit:contain;aspect-ratio:auto}
+.hero-intro {
+  padding:86px 0 64px;
+  background:radial-gradient(circle at 88% 24%,#f2ced6 0,#f5e7e6 29%,#f9eeeb 67%);
+}
+.hero-flex {grid-template-columns:minmax(0,1.65fr) minmax(230px,.6fr);gap:72px;align-items:center}
+.hero-intro .label {font-size:11px;letter-spacing:.18em}
+.hero-intro h1 {font-size:clamp(58px,7.9vw,106px);max-width:880px;letter-spacing:-.08em;margin:20px 0 28px}
+.hero-intro p {max-width:710px}
+.hero-aside {max-width:300px;background:#ffffff9c;border-left:4px solid var(--pinkh);border-radius:0 10px 10px 0;padding:24px 25px;font-size:14px;box-shadow:0 12px 30px #1b24590c}
+.hero-aside strong {font-size:17px;line-height:1.28;letter-spacing:-.02em}
+.hero-intro .actions {margin-top:36px}
+.cta {min-height:46px;justify-content:center;gap:13px;padding:14px 23px;border-radius:7px;transition:transform .18s,background .18s}
+.cta:hover {transform:translateY(-2px)}
+.cta.outline:hover {background:#fff}
+.stat-line {border-top-color:#cdaeb5;padding-top:22px;margin-top:62px}
+.stat-line b {width:8px;height:8px}
+
+/* Puertas de entrada editoriales */
+.rutas {background:#fff;border-bottom:1px solid var(--edge-soft);padding:58px 0 72px}
+.rutas-intro {display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:27px}
+.rutas-intro h2 {font-size:clamp(27px,3.1vw,42px);letter-spacing:-.055em;line-height:1.09;margin:10px 0 0;max-width:680px}
+.rutas-intro p {font-size:14px;line-height:1.7;max-width:320px;margin:0}
+.rutas-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.ruta {display:flex;flex-direction:column;min-height:232px;gap:18px;padding:30px 28px;background:var(--paper-soft);border:1px solid var(--edge-soft);border-radius:9px;text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}
+.ruta:hover,.ruta:focus-visible {transform:translateY(-4px);border-color:#bf83a0;box-shadow:0 16px 36px #20285017}
+.ruta-head {display:flex;justify-content:space-between;align-items:center}
+.ruta-num {font-size:12px;font-weight:850;letter-spacing:.16em;color:#aa356a}
+.ruta-arrow {font-size:25px;color:var(--navy);line-height:1}
+.ruta strong {font-size:clamp(22px,2vw,30px);line-height:1.1;letter-spacing:-.047em;color:var(--navy);font-weight:850}
+.ruta p {line-height:1.57;font-size:14px;margin:0;max-width:320px}
+.ruta:nth-child(2) {background:var(--navy);border-color:var(--navy);color:#e6e7f7}
+.ruta:nth-child(2) strong,.ruta:nth-child(2) .ruta-arrow {color:#fff}
+.ruta:nth-child(2) .ruta-num {color:#f4a4c2}
+.ruta:nth-child(3) {background:#f8e8eb}
+
+/* Lectura y composición */
+.sec {padding:108px 0}
+.sec .label {font-size:11px}
+.sec h2 {line-height:1.07}
+.copy {max-width:650px}
+.text-block .copy {color:#414358}
+.tag {border:1px solid #e4cbd3;background:#f8e7eb}
+.mission {gap:22px;margin-top:35px}
+.mission article {padding-top:23px}
+.sector {border-radius:8px;min-height:300px;padding:33px;transition:transform .2s,box-shadow .2s}
+.sector:hover {transform:translateY(-3px);box-shadow:0 14px 36px #1b245910}
+.data-panel,.evidence .ev-chart {border-radius:9px}
+.evidence .ev-kpis {gap:16px;margin:39px 0 26px}
+.evidence .ev-kpis article {min-height:159px;border-radius:7px;padding:28px 23px;background:#fff4f3}
+.evidence .ev-kpis strong {font-size:clamp(35px,3.3vw,55px)}
+.evidence .ev-kpis span {font-size:13px;font-weight:650}
+.evidence .ev-chart {padding:32px}
+.evidence .ev-panel .ev-row {margin:18px 0}
+.evidence .ev-track {height:13px}
+.evidence .ev-tabs {gap:8px}
+.evidence .ev-tab {border-radius:6px;min-height:42px}
+.evidence .ev-tab:hover {background:#e1c8d6}
+.evidence .ev-tab.active:hover {background:var(--navy)}
+.evidence .ev-link {border-radius:6px}
+.evidence .ev-link:hover {background:#ffc3d8}
+.evidence .ev-caveat {max-width:900px}
+.data-provenance {font-size:12px;line-height:1.62;color:#c9cce6;max-width:780px;margin:16px 0 0}
+.mensaje-vacio {padding:31px 33px;border:1px solid var(--edge-soft);border-left:4px solid var(--pinkh);background:#fffcfa;border-radius:4px;color:#4f5065}
+#agenda-edicion .mensaje-vacio {margin:20px 0}
+#noticias-edicion .mensaje-vacio {background:#fff;grid-column:1/-1}
+#participa .mensaje-vacio {background:#ffffff12;border-color:#7780a5;color:#fff}
+.news {border-radius:8px;overflow:hidden}
+.news-visual {min-height:178px}
+.govern-box {border-radius:7px}
+.join {padding:108px 0;background:radial-gradient(circle at 85% 4%,#2c387b,var(--navyd) 72%)}
+.join .lede {max-width:800px}
+footer a {text-underline-offset:4px}
+footer a:focus-visible {outline-color:#f4a4c2}
+.footnote {line-height:1.7}
+.footnote a {text-decoration:underline}
+@media(max-width:1000px) {
+  .links {gap:13px}
+  .hero-flex {gap:34px}
+  .rutas-grid {gap:12px}
+  .ruta {padding:24px;min-height:250px}
+}
+@media(max-width:780px) {
+  html {scroll-padding-top:94px}
+  nav {min-height:75px}
+  .banner img {max-height:270px}
+  .hero-intro {padding:53px 0 38px}
+  .hero-flex {grid-template-columns:1fr}
+  .hero-intro h1 {font-size:clamp(52px,10vw,77px)}
+  .hero-aside {max-width:100%;padding:18px 21px}
+  .stat-line {margin-top:34px;gap:16px}
+  .rutas {padding:52px 0 62px}
+  .rutas-intro {display:block}
+  .rutas-intro p {max-width:590px;margin:16px 0 0}
+  .rutas-grid {grid-template-columns:1fr}
+  .ruta {min-height:unset;padding:23px}
+  .ruta strong {font-size:27px}
+  .sec,.join {padding:76px 0}
+  .sector {min-height:215px}
+  .evidence .ev-kpis {gap:10px}
+  .evidence .ev-kpis article {min-height:143px;padding:19px 16px}
+  .evidence .ev-chart {padding:23px 18px}
+  .links.open {gap:5px}
+  .links a {padding:13px 7px;min-height:44px}
+  .links .nav-cta {text-align:center}
+  .links a:not(.nav-cta)::after {display:none}
+}
+@media(max-width:480px) {
+  .top-note {font-size:9px;letter-spacing:.08em}
+  .hero-intro h1 {font-size:clamp(49px,12vw,66px)}
+  .hero-intro .actions,.actions {gap:10px}
+  .hero-intro .actions .cta {width:100%}
+  .rutas-intro h2 {font-size:34px}
+  .rutas-grid {gap:11px}
+  .evidence .ev-kpis strong {font-size:37px}
+  .evidence .ev-kpis span {font-size:12px}
+  .mensaje-vacio {padding:22px}
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
