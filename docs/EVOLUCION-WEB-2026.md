@@ -1,32 +1,40 @@
-# Pucón Creativo — Evolución de experiencia web (noviembre de 2026)
+# Pucón Creativo — dirección editorial simplificada
 
-## Propósito
-Convertir el sitio público en una puerta de acceso a información territorial, oportunidades y colaboración. La publicación debe ser útil para iniciativas creativas, públicos, organizaciones e instituciones de la comuna.
+## Criterio principal
+El sitio debe comunicar una propuesta de valor, aportar evidencia y explicar la acción de la iniciativa. No debe reproducir un informe institucional completo en la portada.
 
-## Alcance de esta primera iteración (rama de diseño)
-- **No se modifica `main` ni el dominio público** hasta revisión y aprobación del pull request.
-- Se conserva la marca gráfica y los colores de partida. Se agrega una capa editorial y responsiva.
-- La portada ofrece tres rutas directas: ecosistema, mapeo y articulación.
-- El mapeo señala su alcance metodológico junto a las cifras, y no solo en la letra pequeña del informe.
-- Se mejora la accesibilidad: enlace «saltar al contenido», navegación por teclado de pestañas, controles del menú móvil, foco visible y ocultamiento coherente de paneles.
-- Se añaden metadatos para compartir, favicon, URL canónica y estilo consistente.
-- Los mensajes sin contenidos editorialmente aprobados se presentan como secciones en preparación, sin actividades o noticias inventadas.
+## Estructura pública de esta iteración
+1. **Portada:** «El territorio también crea.» Un texto de una oración y dos accesos: mapeo e iniciativa.
+2. **Mapeo:** tres hallazgos de mayor utilidad para comprender las necesidades del ecosistema, respaldados por el informe de 352 respuestas. Enlace al informe íntegro.
+3. **La iniciativa:** dos párrafos que explican su rol en términos de información, articulación y desarrollo territorial.
 
-## Pendientes editoriales imprescindibles antes de una versión pública completa
-1. **Participación funcional:** aprobar correo de contacto institucional y perfiles oficiales. Hoy `content/sitio.json` tiene ambos campos vacíos; nunca se sustituirán por datos personales.
-2. **Agenda:** integrar solo actividades verificadas y con datos de fecha, lugar y organizador comprobados.
-3. **Actualidad:** publicar notas con antecedentes, fuente, imágenes autorizadas y revisión editorial.
-4. **Gobernanza:** definir estructura y organizaciones efectivamente formalizadas. Los textos conceptuales no representan órganos ya acordados.
-5. **Datos y directorio:** respetar el corte de 352 respuestas y su carácter voluntario. Para exponer fichas nominativas se requiere consentimiento y protocolo de actualización.
-6. **Identidad:** validar sistema visual, créditos y tratamiento de marcas secundarias con el equipo antes de consolidar versión final.
-7. **Mantenimiento:** asignar responsables de agenda, noticias, contactos, calidad y respaldos de archivos.
+## Qué se eliminó de la página principal
+- Doble navegación en tarjetas y titulares que repetían el propósito.
+- Bloques separados de «qué es», «ecosistema» y misión/visión provisionales.
+- Despliegue íntegro de 4 gráficos con numerosas categorías y notas repetidas.
+- Sección de gobernanza con esquema aún no aprobado.
+- Pantallas vacías de agenda, actualidad y participación, que ocupaban espacio sin entregar un servicio.
 
-## Criterios de revisión de esta rama
-- Comprobar portada, navegación, sección de datos y enlaces de informe en móvil, tablet y escritorio.
-- Verificar foco de teclado, Escape en menú, flechas y Home/End en pestañas.
-- Validar que los JSON vacíos produzcan estados honestos, sin errores ni información ficticia.
-- Confirmar carga relativa de activos desde `/`, URL canónica del dominio y compatibilidad con GitHub Pages.
-- Aprobar narrativa antes de integrar en `main`.
+La agenda y actualidad se conservan en la arquitectura del código, pero solo aparecen cuando existe material marcado como `publicado: true`. Los canales de contacto no se muestran mientras permanezcan vacíos en `content/sitio.json`.
 
-## Siguiente etapa recomendada
-Con la identidad y los canales institucionales validados, desarrollar una agenda realmente activa, recursos descargables, un directorio voluntario de iniciativas y fichas públicas con buscador y filtros, junto a una gobernanza editorial explícita. El diseño debe responder a esas funciones, no anteponerse a ellas.
+## Principios de redacción
+- Una idea por bloque, sin adjetivación institucional innecesaria.
+- Priorizar conceptos concretos: información territorial, vínculos entre iniciativas, prioridades del mapeo.
+- Evitar duplicar «reconocer, conectar y proyectar» o «encuentro, información y colaboración» en cada sección.
+- No presentar como acordada una estructura de gobernanza conceptual.
+- No inventar actividades, noticias, contactos, ni convertir una muestra voluntaria en censo.
+
+## Datos destacados
+- **68,4 %:** no participa en redes.
+- **52 %:** indica difusión y visibilidad como prioridad.
+- **48,6 %:** prioriza nuevos públicos o clientes.
+- **352:** tamaño de la muestra exploratoria; no se exhibe como indicador de cobertura comunal.
+
+## Identidad y publicación
+Se conserva el logotipo, la pieza gráfica territorial y la paleta base azul/rosa, con mayor espacio en blanco y menor densidad de componentes. Todo permanece en la rama `diseno/evolucion-plataforma-2026`; la rama pública `main` no se altera hasta aprobar el PR.
+
+## Pendientes para una etapa funcional
+Validar canal oficial de contacto, actividades reales, noticias y acuerdos de gobernanza. Un directorio de iniciativas requiere consentimiento explícito y protocolo de actualización. El análisis más completo debe vivir en documentos de consulta o páginas secundarias, no sobrecargar la portada.
+
+## Revisión requerida
+Comprobar funcionamiento en móvil/escritorio, enlaces de ancla, carga de activos, publicación condicional de contenidos, accesibilidad del menú y diseño antes de integrar los cambios.
