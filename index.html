@@ -1,172 +1,197 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Pucón Creativo: red territorial de economías creativas, mapeo, agenda, noticias y colaboración en Pucón, La Araucanía." name="description"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Pucón Creativo conecta información territorial y colaboración para fortalecer las economías creativas de Pucón, La Araucanía.">
+<meta name="theme-color" content="#1b2459">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://puconcreativo.cl/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="Pucón Creativo">
+<meta property="og:title" content="Pucón Creativo | El territorio también crea">
+<meta property="og:description" content="Conocimiento y colaboración para las economías creativas de Pucón.">
+<meta property="og:url" content="https://puconcreativo.cl/">
+<meta property="og:image" content="https://puconcreativo.cl/assets/banner-pucon-creativo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/logo-pucon-creativo.png">
+<link rel="stylesheet" href="assets/experiencia-v2.css">
 <title>Pucón Creativo | Red de Economías Creativas</title>
-<style>
-:root{--navy:#1b2459;--navyd:#141b47;--pink:#ef82a8;--pinkh:#e05d8c;--peach:#e5b6b9;--paper:#fbf8f5;--warm:#f5e7e6;--pale:#f0d3d7;--rule:#d9c9ce;--body:#373950;--white:#fff;--max:1200px;--r:14px}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:94px}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--body)}a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-width:100%}h1,h2,h3,p{margin-top:0}h1,h2,h3{color:var(--navy)}.container{width:min(var(--max),calc(100% - 64px));margin:auto}.label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:800;color:var(--pinkh)}.sec{padding:90px 0;border-top:1px solid var(--rule)}.sec h2{font-size:clamp(38px,5vw,70px);font-weight:850;letter-spacing:-.065em;line-height:1.03;margin:16px 0 25px;max-width:890px}.lede{font-size:clamp(18px,2vw,23px);line-height:1.55;max-width:750px}.copy{font-size:16px;line-height:1.72}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:62px;align-items:start}.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.cta{display:inline-flex;align-items:center;gap:10px;background:var(--navy);color:white;border-radius:999px;padding:13px 20px;font-size:13px;font-weight:800;border:1px solid var(--navy);transition:.2s}.cta:hover{background:var(--navyd);transform:translateY(-1px)}.cta.outline{background:transparent;color:var(--navy)}.cta.pink{background:var(--pink);border-color:var(--pink);color:var(--navy)}.top-note{padding:9px 20px;background:var(--navyd);color:#fff;text-align:center;font-size:11px;letter-spacing:.08em}header{position:sticky;top:0;z-index:50;background:#fbf8f5ef;border-bottom:1px solid var(--rule);backdrop-filter:blur(12px)}nav{width:min(var(--max),calc(100% - 64px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:83px}.brand{display:flex;gap:14px;align-items:center;color:var(--navy);font-size:17px;font-weight:900;letter-spacing:-.055em;line-height:1}.brand img{width:58px;height:69px;object-fit:contain}.brand small{font-size:10px;letter-spacing:.12em;display:block;margin-top:7px;font-weight:700}.links{display:flex;align-items:center;gap:23px}.links a{font-size:12px;font-weight:750;color:var(--navy)}.links a:hover{color:var(--pinkh)}.links .nav-cta{background:var(--navy);color:#fff;padding:12px 16px;border-radius:50px}.hamburger{display:none;border:1px solid var(--rule);border-radius:12px;background:#fff;color:var(--navy);padding:10px 13px;font-weight:800;cursor:pointer}
-.banner{background:#d2a3ad;border-bottom:1px solid #e9c3c6}.banner img{width:100%;height:auto;object-fit:cover;aspect-ratio:4/1}.hero-intro{background:var(--warm);padding:62px 0 76px;position:relative;overflow:hidden}.hero-intro:after{content:"";position:absolute;width:270px;height:270px;border:35px solid #ecc6cb;border-radius:50%;right:-125px;bottom:-185px;pointer-events:none}.hero-flex{display:grid;grid-template-columns:1.55fr .6fr;gap:80px;align-items:end}.hero-intro h1{font-size:clamp(48px,7vw,96px);letter-spacing:-.075em;line-height:.99;margin:16px 0 24px;max-width:920px}.hero-intro h1 span{color:var(--pinkh)}.hero-intro p{font-size:clamp(17px,1.7vw,21px);line-height:1.6;max-width:670px}.hero-aside{border-left:2px solid var(--pinkh);padding-left:22px;font-size:13px;line-height:1.7;max-width:245px;color:var(--navy)}.hero-aside strong{display:block;font-size:14px;margin-bottom:7px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.stat-line{border-top:1px solid #d4aeb4;padding-top:24px;display:flex;gap:30px;flex-wrap:wrap;margin-top:50px;font-size:12px;font-weight:700;color:var(--navy)}.stat-line span{display:flex;align-items:center;gap:8px}.stat-line b{display:block;width:7px;height:7px;border-radius:50%;background:var(--pinkh)}
-.text-block p{line-height:1.75}.brand-well{min-height:430px;background:var(--pale);border-radius:260px 260px 10px 10px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:40px 58px}.brand-well:before{content:"";position:absolute;width:390px;height:390px;border:2px solid #d79da7;border-radius:50%;left:-215px;bottom:-240px}.brand-well img{width:min(100%,325px);position:relative;filter:drop-shadow(1px 4px 2px #90697119)}.principles{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0}.tag{background:#efd9dd;padding:9px 13px;border-radius:30px;font-size:12px;color:var(--navy);font-weight:750}.mission{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}.mission article{border-top:1px solid var(--rule);padding-top:18px}.mission h3{font-size:19px;letter-spacing:-.03em;margin-bottom:8px}.mission p{font-size:14px;line-height:1.55;color:var(--body)}
-.eco{background:#fff8f6}.sector{border:1px solid var(--rule);padding:25px;min-height:264px;background:#fff;display:flex;flex-direction:column;justify-content:space-between}.sector .number{font-size:11px;font-weight:850;letter-spacing:.16em;color:var(--pinkh)}.sector h3{font-size:clamp(23px,2.4vw,30px);letter-spacing:-.055em;margin:25px 0 8px}.sector p{line-height:1.55;font-size:14px;margin:0}
-.data{background:var(--navy);color:#e9e9fa;border:0}.data h2,.data h3{color:#fff}.data .label{color:#f49cbb}.data .lede{color:#e8e7ef}.data-flex{display:grid;grid-template-columns:1.1fr 1fr;gap:18px;margin-top:35px}.data-panel{border:1px solid #67709c;padding:33px;min-height:310px;background:#ffffff0c}.data-panel h3{font-size:25px;letter-spacing:-.04em}.data .cta{background:var(--pink);border-color:var(--pink);color:var(--navy)}.data .cta.outline{color:#fff;border-color:#c5c8e2;background:transparent}.data-note{font-size:12px;line-height:1.5;color:#bfc2df}.chiprow{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0 25px}.chip{background:#f2d6df22;padding:8px 12px;font-size:12px;border:1px solid #9598bc;color:white;border-radius:25px}.fake-plot{display:grid;gap:13px;margin:29px 0}.plot-row{display:grid;grid-template-columns:95px 1fr;gap:13px;align-items:center;font-size:11px}.plot-row span{height:11px;background:#ffffff13;border-radius:30px;overflow:hidden}.plot-row i{display:block;height:100%;background:var(--pink);border-radius:30px;opacity:.9}.plot-row:nth-child(2) i{background:#bdc4f0}.plot-row:nth-child(3) i{background:#e8b9c6}.plot-row:nth-child(4) i{background:#9ba6eb}.plot-row small{color:#c8c5de}.download-placeholder{margin-top:18px;padding:15px;border:1px dashed #afb0d1;font-size:13px;color:#d4d4e8;line-height:1.5}
-.agenda{background:var(--paper)}.switcher{display:flex;gap:8px;flex-wrap:wrap;margin:25px 0}.filter{padding:10px 14px;background:transparent;border:1px solid #c7b8c0;color:var(--navy);border-radius:100px;cursor:pointer;font-size:13px;font-weight:760}.filter[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:white}.events{border-top:1px solid var(--rule)}.event{display:grid;grid-template-columns:130px 1fr 240px;gap:20px;align-items:start;padding:24px 0;border-bottom:1px solid var(--rule)}.event small{font-size:12px;color:var(--pinkh);letter-spacing:.06em;text-transform:uppercase;font-weight:800}.event h3{font-size:23px;letter-spacing:-.04em;margin:4px 0}.event p{font-size:14px;line-height:1.55;margin:0}.event .right{font-size:13px;color:#66677b}
-.govern{background:#f2e5e7}.govern-box{border:1px solid #d5b7c2;padding:32px;display:grid;gap:14px;background:#f9f0f0}.gov-node{padding:18px 20px;background:#fff;border-left:4px solid var(--pinkh);color:var(--navy)}.gov-node strong{font-size:16px}.gov-node p{font-size:13px;margin:8px 0 0;line-height:1.5}.gline{width:2px;background:#d59aaa;height:23px;margin:-6px auto}
-.news{padding:23px;border:1px solid var(--rule);background:#fff;display:flex;flex-direction:column;gap:12px}.news-visual{height:180px;margin:-23px -23px 9px;background:linear-gradient(140deg,#d7a0ad,#f1d9d4);overflow:hidden;position:relative}.news-visual.first{background:var(--pale);display:flex;justify-content:center;align-items:center}.news-visual.first img{width:115px;height:150px;object-fit:contain}.news-visual.second:before{content:"";position:absolute;width:260px;height:260px;border:60px solid #1b2459;border-radius:50%;right:-60px;top:65px}.news-visual.third{background:var(--navy)}.news-visual.third:after{content:"";position:absolute;background:var(--pink);width:120px;height:320px;transform:rotate(40deg);left:100px;top:-60px;border-radius:70px}.news small{font-size:11px;color:var(--pinkh);font-weight:800;letter-spacing:.14em;text-transform:uppercase}.news h3{font-size:22px;letter-spacing:-.045em;margin:0}.news p{font-size:14px;line-height:1.55;margin:0}
-.join{background:var(--navyd);color:#fff}.join h2{color:#fff}.join .label{color:var(--pink)}.join p{color:#e4e4f1}.join .cta{background:var(--pink);border-color:var(--pink);color:var(--navy)}.email{font-size:clamp(18px,2vw,24px);font-weight:850;color:#fff;text-decoration:underline;text-underline-offset:5px}.contact-note{font-size:11px!important;color:#c4c4db!important;margin:15px 0}
-footer{background:#111739;color:#d3d5e7;padding:60px 0 30px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:55px}.footer-name{display:flex;gap:16px;align-items:center;font-size:19px;color:white;font-weight:850}.footer-name img{width:72px;height:94px;object-fit:contain;filter:brightness(0) invert(1)}footer p{font-size:13px;line-height:1.6}footer strong{color:white;font-size:13px}footer a:hover{color:var(--pink)}.partner{display:flex;gap:20px;align-items:center;border-top:1px solid #424969;margin-top:40px;padding-top:23px}.partner img{width:130px;height:auto;max-height:75px;object-fit:contain}.partner p{max-width:560px}.footnote{border-top:1px solid #424969;padding-top:20px;margin-top:22px;font-size:11px;color:#9da3c6}.faux-disabled{opacity:.68;cursor:not-allowed}
-@media(max-width:1000px){.links{gap:13px}.links a{font-size:11px}.hero-flex{gap:40px}.grid-2{gap:32px}}
-@media(max-width:780px){.container,nav{width:calc(100% - 34px)}.top-note{font-size:9px}.brand img{width:48px;height:59px}.brand{font-size:15px}.hamburger{display:block}.links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);padding:20px 22px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--rule);box-shadow:0 12px 20px #00000015;gap:14px}.links.open{display:flex}.links a{font-size:14px}.sec{padding:62px 0}.hero-flex,.grid-2,.grid-3,.data-flex,.footer-grid{grid-template-columns:1fr}.hero-intro{padding:44px 0 58px}.hero-aside{max-width:100%;margin-top:4px}.hero-intro h1{font-size:clamp(49px,10vw,67px)}.brand-well{min-height:360px}.event{grid-template-columns:75px 1fr;gap:8px 15px}.event .right{grid-column:2}.mission{grid-template-columns:1fr}.sector{min-height:220px}.partner{align-items:flex-start}.footer-grid{gap:27px}}
-@media(max-width:460px){.banner img{height:auto;aspect-ratio:4/1}.stat-line{gap:12px}.hero-intro h1{font-size:clamp(45px,12.2vw,61px)}.sec h2{font-size:39px}.data-panel{padding:22px}.plot-row{grid-template-columns:80px 1fr}.partner{flex-direction:column}.event h3{font-size:20px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta{transition:none}}
-</style>
-<style>
-.evidence .ev-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:36px 0 24px}
-.evidence .ev-kpis article{background:#fff5f4;padding:24px 18px;min-height:145px;display:flex;flex-direction:column;gap:12px;color:#1b2459}
-.evidence .ev-kpis strong{font-weight:900;font-size:clamp(34px,3.1vw,52px);letter-spacing:-.05em;line-height:1}
-.evidence .ev-kpis span{font-size:12px;line-height:1.45}
-.evidence .ev-layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(270px,.75fr);gap:18px}
-.evidence .ev-chart{padding:25px 24px;background:#fffafa;color:#1b2459}
-.evidence .ev-tabs{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:18px;border-bottom:1px solid #d8cad1;margin-bottom:20px}
-.evidence .ev-tab{border:0;border-radius:7px;padding:9px 14px;background:#f1e7eb;color:#252e60;font-size:12px;cursor:pointer;font-weight:700}
-.evidence .ev-tab.active{background:#1b2459;color:white}.evidence .ev-tab:focus-visible{outline:3px solid #e65c98;outline-offset:2px}
-.evidence .ev-panel h3{font-size:26px;margin:0 0 8px;color:#1b2459;line-height:1.2}
-.evidence .ev-intro,.evidence .ev-foot{font-size:12px;line-height:1.55;color:#62677c}
-.evidence .ev-panel .ev-row{display:grid;grid-template-columns:minmax(170px,1.4fr) minmax(70px,1fr) 50px;gap:12px;align-items:center;margin:16px 0}
-.evidence .ev-name{font-size:12px;line-height:1.3;font-weight:550}.evidence .ev-track{height:11px;border-radius:20px;background:#eee1e7;overflow:hidden}
-.evidence .ev-track i{height:100%;display:block;border-radius:20px;background:linear-gradient(90deg,#f49cbb,#e05895)}
-.evidence .ev-row b{font-size:12px;text-align:right}
-.evidence .ev-aside{border:1px solid #8994be;padding:25px;color:#eef0fc}.evidence .ev-aside h3{color:white;line-height:1.12;font-size:28px;margin:10px 0 25px}
-.evidence .ev-aside div{border-top:1px solid #59648d;padding:16px 0}.evidence .ev-aside div b{color:#f4a4c2;font-size:27px}.evidence .ev-aside div p{font-size:13px;line-height:1.5;margin:7px 0 0}
-.evidence .ev-link{display:block;padding:15px;color:#162251;background:#f4a4c2;text-decoration:none;font-weight:800;margin-top:16px;font-size:13px}
-.evidence .ev-caveat{font-size:11px;line-height:1.6;color:#d8d9e8;margin-top:19px}
-@media(max-width:920px){.evidence .ev-kpis{grid-template-columns:repeat(2,1fr)}.evidence .ev-layout{grid-template-columns:1fr}}
-@media(max-width:540px){.evidence .ev-chart{padding:17px 12px}.evidence .ev-kpis article{padding:18px 13px}.evidence .ev-panel .ev-row{grid-template-columns:1fr 60px;gap:6px}.evidence .ev-name{grid-column:1/3}.evidence .ev-track{grid-column:1}.evidence .ev-row b{grid-column:2}.evidence .ev-tab{padding:9px;font-size:11px}}
-</style><style>
-.mensaje-vacio{padding:24px 0;color:#676a7c;font-size:15px;line-height:1.6}
-#agenda-edicion .mensaje-vacio{grid-column:1/-1}
-#noticias-edicion .news{min-width:0}
-#noticias-edicion .news-visual img{width:100%;height:100%;object-fit:cover}
-#noticias-edicion .news .leer-mas{font-size:12px;font-weight:800;color:var(--navy);text-decoration:underline;text-underline-offset:4px;margin-top:auto}
-#participa .mensaje-vacio{color:#dfdceb}
-#contacto-edicion{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
-</style></head>
+</head>
 <body>
-<div class="top-note">PUCÓN CREATIVO · RED DE ECONOMÍAS CREATIVAS</div>
-<header><nav aria-label="Navegación principal">
-<a class="brand" href="#inicio"><img alt="Logo de Pucón Creativo" src="assets/logo-pucon-creativo.png"/><span>PUCÓN CREATIVO<small>RED DE ECONOMÍAS CREATIVAS</small></span></a>
-<div class="links" id="links"><a href="#somos">Qué es</a><a href="#ecosistema">Ecosistema</a><a href="#mapeo">Mapeo</a><a href="#agenda">Agenda</a><a href="#gobernanza">La Red</a><a href="#actualidad">Actualidad</a><a class="nav-cta" href="#participa">Participa</a></div>
-<button aria-controls="links" aria-expanded="false" aria-label="Abrir menú" class="hamburger" id="menu-toggle" type="button">☰ Menú</button>
-</nav></header>
-<main>
-<section aria-label="Portada" id="inicio">
-<div class="banner"><img alt="Gráfica oficial Pucón Creativo con el volcán Rukapillán y logo institucional de proyecto financiado por el Ministerio de las Culturas" src="assets/banner-pucon-creativo.jpg"/></div>
-<div class="hero-intro"><div class="container hero-flex"><div>
-<div class="label">RED DE ECONOMÍAS CREATIVAS · PUCÓN, LA ARAUCANÍA</div>
-<h1>El territorio<br/>también <span>crea.</span></h1>
-<p id="intro-edicion">Una plataforma de encuentro, información y colaboración para reconocer la diversidad creativa de Pucón y proyectar nuevas oportunidades desde el territorio.</p>
-<div class="actions"><a class="cta" href="#somos">Conoce Pucón Creativo <span aria-hidden="true">↗</span></a><a class="cta outline" href="#mapeo">Explora el mapeo <span aria-hidden="true">↗</span></a></div>
-</div><aside class="hero-aside"><strong>Una red territorial en construcción.</strong> Cultura, artes, oficios, diseño, audiovisual, turismo creativo, gastronomía y creación interdisciplinaria.</aside></div>
-<div class="container stat-line"><span><b></b> CONOCIMIENTO TERRITORIAL</span><span><b></b> ARTICULACIÓN</span><span><b></b> COLABORACIÓN</span></div></div>
-</section>
-<section class="sec" id="somos"><div class="container grid-2">
-<div class="text-block"><span class="label">01 / QUÉ ES PUCÓN CREATIVO</span><h2>Reconocer, conectar y proyectar.</h2>
-<p class="lede">Pucón Creativo impulsa el encuentro entre quienes crean, producen y gestionan bienes y servicios creativos en la comuna.</p>
-<p class="copy">La iniciativa desarrolla herramientas para hacer visible el ecosistema, compartir conocimiento y fortalecer el trabajo colaborativo. A partir del mapeo de economías creativas, busca aportar información útil para la gestión cultural, el desarrollo productivo, el turismo cultural y la articulación territorial.</p>
-<div class="principles"><span class="tag">Pertinencia territorial</span><span class="tag">Cooperación</span><span class="tag">Sostenibilidad</span><span class="tag">Circulación creativa</span></div>
-<div class="mission"><article><h3>Misión <small style="font-size:10px;color:#8b7c8e">· Texto de trabajo</small></h3><p>Conectar capacidades, información y oportunidades para fortalecer las economías creativas de Pucón.</p></article><article><h3>Visión <small style="font-size:10px;color:#8b7c8e">· Texto de trabajo</small></h3><p>Consolidar un territorio donde la creatividad contribuya de forma sostenida a la vida cultural, social y económica.</p></article></div>
-</div><div class="brand-well"><img alt="Marca gráfica Pucón Creativo, con líneas topográficas en azul" src="assets/logo-pucon-creativo.png"/></div>
-</div></section>
-<section class="sec eco" id="ecosistema"><div class="container"><span class="label">02 / ECOSISTEMA CREATIVO</span><h2>Una diversidad de prácticas<br/>y saberes.</h2><p class="lede">El ecosistema creativo reúne disciplinas, oficios e iniciativas que dialogan con el territorio y con distintas actividades económicas.</p>
-<div class="grid-3">
-<article class="sector"><span class="number">ÁMBITO 01</span><div><h3>Artes y patrimonio</h3><p>Música, artes escénicas, artes visuales, literatura, artesanía, oficios y expresiones patrimoniales.</p></div></article>
-<article class="sector"><span class="number">ÁMBITO 02</span><div><h3>Diseño y medios</h3><p>Diseño, arquitectura, fotografía, audiovisual, animación, videojuegos y creación digital.</p></div></article>
-<article class="sector"><span class="number">ÁMBITO 03</span><div><h3>Experiencias creativas</h3><p>Gastronomía, turismo cultural y creativo, educación, innovación y proyectos interdisciplinarios.</p></div></article>
-</div><p style="font-size:12px;color:#777389;margin-top:18px">Agrupación conceptual para navegación web; revisar categorías finales con la metodología del mapeo.</p>
-</div></section>
-<section class="sec data evidence" id="mapeo"><div class="container">
-<span class="label">03 / MAPEO DE ECONOMÍAS CREATIVAS · DATOS DEL INFORME</span>
-<h2>El ecosistema creativo<br/>en cifras.</h2><p class="lede">El mapeo permite conocer el perfil de las iniciativas, sus condiciones de trabajo y las prioridades declaradas para orientar la Red.</p>
-<div class="ev-kpis"><article><strong>352</strong><span>Respuestas analizadas</span></article><article><strong>69,0%</strong><span>Actividad creativa principal</span></article><article><strong>68,4%</strong><span>No participa en redes</span></article><article><strong>45,5%</strong><span>Creación manual, oficios, diseño y artes visuales</span></article></div>
-<div class="ev-layout"><div class="ev-chart"><div aria-label="Gráficas del mapeo" class="ev-tabs" role="tablist"><button aria-selected="true" class="ev-tab active" data-show="prioridades" role="tab" type="button">Prioridades</button><button aria-selected="false" class="ev-tab" data-show="brechas" role="tab" type="button">Brechas</button><button aria-selected="false" class="ev-tab" data-show="tipologias" role="tab" type="button">Tipologías</button><button aria-selected="false" class="ev-tab" data-show="canales" role="tab" type="button">Canales</button></div><article class="ev-panel" data-panel="prioridades"><h3>Qué necesita primero el ecosistema</h3><p class="ev-intro">Porcentaje sobre las 352 respuestas del informe.</p><div class="ev-row"><span class="ev-name">Difusión y visibilidad</span><div class="ev-track"><i style="width:52%"></i></div><b>52%</b></div><div class="ev-row"><span class="ev-name">Acceso a nuevos públicos o clientes</span><div class="ev-track"><i style="width:48.6%"></i></div><b>48,6%</b></div><div class="ev-row"><span class="ev-name">Postulación a fondos</span><div class="ev-track"><i style="width:45.2%"></i></div><b>45,2%</b></div><div class="ev-row"><span class="ev-name">Espacios de venta, exhibición o circulación</span><div class="ev-track"><i style="width:41.5%"></i></div><b>41,5%</b></div><div class="ev-row"><span class="ev-name">Comercialización y ventas</span><div class="ev-track"><i style="width:37.5%"></i></div><b>37,5%</b></div><div class="ev-row"><span class="ev-name">Articulación entre actores creativos</span><div class="ev-track"><i style="width:31.8%"></i></div><b>31,8%</b></div><div class="ev-row"><span class="ev-name">Vinculación con turismo</span><div class="ev-track"><i style="width:28.1%"></i></div><b>28,1%</b></div><p class="ev-foot">Los porcentajes no suman 100% porque la pregunta permitía múltiples respuestas.</p></article><article class="ev-panel" data-panel="brechas" hidden=""><h3>Dificultades declaradas</h3><p class="ev-intro">Porcentaje sobre las 352 respuestas del informe.</p><div class="ev-row"><span class="ev-name">Acceso a públicos o clientes</span><div class="ev-track"><i style="width:45.7%"></i></div><b>45,7%</b></div><div class="ev-row"><span class="ev-name">Difusión</span><div class="ev-track"><i style="width:45.2%"></i></div><b>45,2%</b></div><div class="ev-row"><span class="ev-name">Espacios de exhibición o venta</span><div class="ev-track"><i style="width:42.6%"></i></div><b>42,6%</b></div><div class="ev-row"><span class="ev-name">Redes de colaboración</span><div class="ev-track"><i style="width:41.8%"></i></div><b>41,8%</b></div><div class="ev-row"><span class="ev-name">Continuidad durante el año</span><div class="ev-track"><i style="width:38.9%"></i></div><b>38,9%</b></div><div class="ev-row"><span class="ev-name">Comercialización</span><div class="ev-track"><i style="width:37.2%"></i></div><b>37,2%</b></div><div class="ev-row"><span class="ev-name">Vinculación con turismo</span><div class="ev-track"><i style="width:31.8%"></i></div><b>31,8%</b></div><p class="ev-foot">Los porcentajes no suman 100% porque la pregunta permitía múltiples respuestas.</p></article><article class="ev-panel" data-panel="tipologias" hidden=""><h3>Tipologías de iniciativas</h3><p class="ev-intro">Porcentaje sobre las 352 respuestas del informe.</p><div class="ev-row"><span class="ev-name">Creación manual, oficios, diseño y artes visuales</span><div class="ev-track"><i style="width:45.5%"></i></div><b>45,5%</b></div><div class="ev-row"><span class="ev-name">Música, artes escénicas y programación en vivo</span><div class="ev-track"><i style="width:16.5%"></i></div><b>16,5%</b></div><div class="ev-row"><span class="ev-name">Servicios creativos, audiovisual y nuevos medios</span><div class="ev-track"><i style="width:11.9%"></i></div><b>11,9%</b></div><div class="ev-row"><span class="ev-name">Educación, mediación y formación</span><div class="ev-track"><i style="width:8.8%"></i></div><b>8,8%</b></div><div class="ev-row"><span class="ev-name">Gastronomía creativa</span><div class="ev-track"><i style="width:6.5%"></i></div><b>6,5%</b></div><div class="ev-row"><span class="ev-name">Turismo creativo y patrimonio</span><div class="ev-track"><i style="width:5.7%"></i></div><b>5,7%</b></div><div class="ev-row"><span class="ev-name">Arquitectura y diseño territorial</span><div class="ev-track"><i style="width:3.1%"></i></div><b>3,1%</b></div><div class="ev-row"><span class="ev-name">Gestión y apoyo al ecosistema</span><div class="ev-track"><i style="width:2%"></i></div><b>2%</b></div><p class="ev-foot">Clasificación integrada elaborada en el informe.</p></article><article class="ev-panel" data-panel="canales" hidden=""><h3>Canales de venta y difusión</h3><p class="ev-intro">Porcentaje sobre las 352 respuestas del informe.</p><div class="ev-row"><span class="ev-name">Redes sociales</span><div class="ev-track"><i style="width:86.4%"></i></div><b>86,4%</b></div><div class="ev-row"><span class="ev-name">Boca a boca</span><div class="ev-track"><i style="width:59.4%"></i></div><b>59,4%</b></div><div class="ev-row"><span class="ev-name">Eventos, festivales y encuentros</span><div class="ev-track"><i style="width:35.4%"></i></div><b>35,4%</b></div><div class="ev-row"><span class="ev-name">Ferias o mercados</span><div class="ev-track"><i style="width:30.7%"></i></div><b>30,7%</b></div><div class="ev-row"><span class="ev-name">Encargos directos</span><div class="ev-track"><i style="width:27.8%"></i></div><b>27,8%</b></div><div class="ev-row"><span class="ev-name">Página web</span><div class="ev-track"><i style="width:27.5%"></i></div><b>27,5%</b></div><div class="ev-row"><span class="ev-name">Hoteles, restaurantes o servicios turísticos</span><div class="ev-track"><i style="width:12.8%"></i></div><b>12,8%</b></div><div class="ev-row"><span class="ev-name">Agencias o turoperadores</span><div class="ev-track"><i style="width:3.8%"></i></div><b>3,8%</b></div><p class="ev-foot">Los porcentajes no suman 100% porque la pregunta permitía múltiples respuestas.</p></article></div>
-<aside class="ev-aside"><span class="label">LECTURA ESTRATÉGICA</span><h3>Información para orientar decisiones.</h3>
-<div><b>52,0%</b><p>Señala difusión y visibilidad como prioridad para la primera etapa.</p></div>
-<div><b>60,2%</b><p>Considera útil fortalecer capacidades para postular a fondos.</p></div>
-<div><b>86,4%</b><p>Usa redes sociales para vender, mostrar o difundir su trabajo.</p></div>
-<a class="ev-link" data-report-link="true" href="https://drive.google.com/file/d/1N3PSCy8HWKX1rpr0u7PnchMHRvWD5v2Q/view" rel="noopener noreferrer" target="_blank">Consultar informe del mapeo ↗</a>
-<p class="ev-caveat">Mapeo exploratorio-descriptivo de participación voluntaria. Las cifras corresponden a 352 respuestas del informe, no al universo total de iniciativas de la comuna. El archivo de respuestas puede incluir registros posteriores al corte.</p>
-</aside></div></div></section>
-<section class="sec agenda" id="agenda"><div class="container"><span class="label">04 / AGENDA COMÚN</span><h2>Lo que está pasando<br/>en el territorio.</h2><p class="lede">Un calendario abierto para difundir actividades e iniciativas creativas de la comuna. Su programación podrá actualizarse desde el administrador del sitio.</p>
-<div aria-label="Filtrar tipos de actividades" class="switcher" role="group"><button aria-pressed="true" class="filter" data-category="all">Todas</button><button aria-pressed="false" class="filter" data-category="encuentros">Encuentros</button><button aria-pressed="false" class="filter" data-category="formacion">Formación</button><button aria-pressed="false" class="filter" data-category="convocatorias">Convocatorias</button></div>
-<div class="events" id="agenda-edicion"><p class="mensaje-vacio">La agenda común se está preparando. Pronto encontrarás aquí las actividades que comparten las iniciativas del territorio.</p></div>
-<div class="actions"><a class="cta" href="#participa">Compartir actividad</a></div>
-</div></section>
-<section class="sec govern" id="gobernanza"><div class="container grid-2"><div><span class="label">05 / RED Y GOBERNANZA</span><h2>Una estructura para colaborar.</h2><p class="lede">La Red de Gestión promueve encuentros, acuerdos y herramientas compartidas para fortalecer la coordinación del ecosistema creativo.</p><p class="copy">Este apartado podrá transparentar los órganos de coordinación, las organizaciones vinculadas, los mecanismos de participación y los documentos públicos que sustenten su funcionamiento.</p><div class="actions"><a class="cta" href="#participa">Cómo vincularse ↗</a></div></div><div class="govern-box"><span class="label">ESQUEMA CONCEPTUAL · POR VALIDAR</span><div class="gov-node"><strong>Coordinación de la iniciativa</strong><p>Gestión operativa, comunicaciones y seguimiento.</p></div><div class="gline"></div><div class="gov-node"><strong>Espacios de gobernanza colaborativa</strong><p>Participación, prioridades y acuerdos de trabajo.</p></div><div class="gline"></div><div class="gov-node"><strong>Actores del ecosistema</strong><p>Personas, proyectos, organizaciones y alianzas territoriales.</p></div></div></div></section>
-<section class="sec" id="actualidad"><div class="container"><span class="label">06 / ACTUALIDAD</span><h2>Historias, noticias<br/>y avances.</h2><div class="grid-3" id="noticias-edicion"><p class="mensaje-vacio">Pronto publicaremos noticias, convocatorias y avances de Pucón Creativo.</p></div></div></section>
-<section class="sec join" id="participa"><div class="container"><span class="label">07 / PARTICIPA</span><h2>El territorio se construye<br/>en colaboración.</h2><p class="lede">¿Desarrollas un proyecto creativo en Pucón? ¿Representas una organización o quieres contribuir a una agenda compartida? La red es un espacio para encontrarnos.</p><div class="actions" id="contacto-edicion"><p class="mensaje-vacio">Pronto publicaremos aquí nuestros canales oficiales de contacto.</p></div></div></section>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-head">
+<nav class="nav container" aria-label="Navegación principal">
+  <a class="brand" href="#inicio"><img src="assets/logo-pucon-creativo.png" alt=""><span>PUCÓN CREATIVO</span></a>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="navlinks">Menú</button>
+  <div class="navlinks" id="navlinks">
+    <a href="#mapeo">El mapeo</a>
+    <a href="#red">La Red</a>
+    <a href="#agenda" id="nav-agenda" hidden>Agenda</a>
+    <a href="#actualidad" id="nav-actualidad" hidden>Actualidad</a>
+  </div>
+</nav>
+</header>
+<main id="contenido">
+  <section class="hero" id="inicio" aria-labelledby="hero-title">
+    <div class="container">
+      <span class="eyebrow">PUCÓN · LA ARAUCANÍA</span>
+      <h1 id="hero-title">El territorio<br>también <em>crea.</em></h1>
+      <p class="hero-copy" id="intro-edicion">Información y colaboración para fortalecer las economías creativas de Pucón.</p>
+      <div class="hero-actions">
+        <a class="link-primary" href="#mapeo">Explorar el mapeo <span aria-hidden="true">↗</span></a>
+        <a class="link-quiet" href="#red">Conocer la iniciativa</a>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/banner-pucon-creativo.jpg" alt="Gráfica territorial de Pucón Creativo con el volcán Rukapillán y créditos institucionales" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <section class="section results" id="mapeo" aria-labelledby="mapeo-title">
+    <div class="container section-inner">
+      <span class="eyebrow">DIAGNÓSTICO TERRITORIAL</span>
+      <h2 class="section-title" id="mapeo-title">Lo que revela<br>el mapeo.</h2>
+      <p class="section-lede">A partir de 352 respuestas, el informe identifica prioridades para orientar el trabajo del ecosistema creativo local.</p>
+      <div class="indicators" aria-label="Tres resultados destacados del mapeo">
+        <article class="indicator"><strong>68,4%</strong><p>No participa en redes de colaboración.</p></article>
+        <article class="indicator"><strong>52%</strong><p>Identifica la difusión y la visibilidad como prioridad.</p></article>
+        <article class="indicator"><strong>48,6%</strong><p>Prioriza el acceso a nuevos públicos o clientes.</p></article>
+      </div>
+      <div class="result-action">
+        <a class="link-primary" href="https://drive.google.com/file/d/1N3PSCy8HWKX1rpr0u7PnchMHRvWD5v2Q/view" data-report-link target="_blank" rel="noopener noreferrer">Consultar informe completo <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="source">Fuente: mapeo exploratorio de 352 respuestas voluntarias. Los resultados no constituyen un censo de la comuna.</p>
+    </div>
+  </section>
+
+  <section class="section red" id="red" aria-labelledby="red-title">
+    <div class="container section-inner">
+      <div>
+        <span class="eyebrow">LA INICIATIVA</span>
+        <h2 class="section-title" id="red-title">Del diagnóstico<br>a la colaboración.</h2>
+      </div>
+      <div class="red-text">
+        <p>Pucón Creativo articula información, capacidades e iniciativas de quienes desarrollan actividades culturales y creativas en la comuna.</p>
+        <p>Su trabajo busca fortalecer los vínculos territoriales y generar mejores condiciones para la circulación y el desarrollo de proyectos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="optional" id="agenda" aria-labelledby="agenda-title" hidden>
+    <div class="container">
+      <span class="eyebrow">AGENDA TERRITORIAL</span>
+      <h2 class="section-title" id="agenda-title">Próximas actividades.</h2>
+      <div class="records" id="agenda-list"></div>
+    </div>
+  </section>
+
+  <section class="optional" id="actualidad" aria-labelledby="actualidad-title" hidden>
+    <div class="container">
+      <span class="eyebrow">ACTUALIDAD</span>
+      <h2 class="section-title" id="actualidad-title">Desde la red.</h2>
+      <div class="news-grid" id="noticias-list"></div>
+    </div>
+  </section>
 </main>
-<footer><div class="container"><div class="footer-grid"><div><div class="footer-name"><img alt="Pucón Creativo" src="assets/logo-pucon-creativo.png"/><span>PUCÓN CREATIVO</span></div><p>Plataforma territorial de información, encuentro y articulación de las economías creativas de Pucón.</p></div><div><strong>Explora</strong><p><a href="#mapeo">Mapeo creativo</a></p><p><a href="#agenda">Agenda común</a></p><p><a href="#gobernanza">Gobernanza</a></p></div><div><strong>Participación</strong><p><a href="#participa">Vincúlate</a></p><p><a href="#actualidad">Actualidad</a></p><p>Redes sociales: enlaces pendientes</p></div></div>
-<div class="partner"><img alt="Logo Festival Reino Fungi, en rosa" src="assets/logo-reino-fungi.png"/><p><strong>Antecedente e impulso de la iniciativa.</strong> Pucón Creativo surge de la experiencia de articulación interdisciplinaria desarrollada desde Festival Reino Fungi. La marca principal de este sitio es Pucón Creativo.</p></div>
-<div class="footnote">Pucón Creativo · Red de Economías Creativas. Datos del mapeo: informe con 352 respuestas de participación voluntaria. © 2026.</div>
-</div></footer>
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-main">
+      <img src="assets/logo-pucon-creativo.png" alt="">
+      <div><strong>PUCÓN CREATIVO</strong><p>Red de Economías Creativas · Pucón, La Araucanía</p></div>
+    </div>
+    <div class="footer-meta">
+      <p>Iniciativa impulsada desde la experiencia territorial de Festival Reino Fungi.</p>
+      <div class="footer-contacts" id="contactos"></div>
+    </div>
+  </div>
+</footer>
 <script>
 (function(){
- const toggle=document.getElementById('menu-toggle'),links=document.getElementById('links');
- toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false');toggle.textContent=open?'✕ Cerrar':'☰ Menú'});
- document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰ Menú'}));
- const filters=document.querySelectorAll('.filter'), events=document.querySelectorAll('.event');
- filters.forEach(f=>f.addEventListener('click',()=>{const category=f.dataset.category;filters.forEach(b=>b.setAttribute('aria-pressed',b===f?'true':'false'));events.forEach(e=>{e.hidden=category!=='all' && e.dataset.category!==category;});}));
+  const toggle=document.getElementById('menu-toggle');
+  const nav=document.getElementById('navlinks');
+  function close(){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='Menú';}
+  toggle.addEventListener('click',()=>{const on=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(on));toggle.textContent=on?'Cerrar':'Menú';});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){close();toggle.focus();}});
+  document.addEventListener('click',e=>{if(nav.classList.contains('open')&&!nav.contains(e.target)&&!toggle.contains(e.target))close();});
+
+  function safeURL(raw){
+    if(typeof raw!=='string'||!raw.trim())return null;
+    try{const u=new URL(raw,location.href);return ['https:','http:'].includes(u.protocol)?u.href:null;}catch{return null;}
+  }
+  const node=(type,text,className)=>{
+    const el=document.createElement(type);
+    if(className)el.className=className;
+    if(text!==undefined)el.textContent=String(text);
+    return el;
+  };
+  async function load(path){
+    const res=await fetch(path,{cache:'no-cache'});
+    if(!res.ok)throw new Error(path);
+    return await res.json();
+  }
+  async function configure(){
+    try{
+      const cfg=await load('content/sitio.json');
+      if(cfg.introduccion)document.getElementById('intro-edicion').textContent=cfg.introduccion;
+      const report=safeURL(cfg.informe);
+      if(report)document.querySelectorAll('[data-report-link]').forEach(a=>a.href=report);
+      const contacts=document.getElementById('contactos');
+      if(cfg.contacto&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cfg.contacto)){
+        const mail=node('a','Contacto');mail.href='mailto:'+cfg.contacto;contacts.append(mail);
+      }
+      const insta=safeURL(cfg.instagram);
+      if(insta){const link=node('a','Instagram');link.href=insta;link.target='_blank';link.rel='noopener noreferrer';contacts.append(link);}
+    }catch(e){console.warn('No se pudo cargar la configuración editorial',e);}
+  }
+  async function agenda(){
+    try{
+      const data=await load('content/agenda.json');
+      if(!Array.isArray(data))return;
+      const items=data.filter(x=>x&&x.publicado===true&&x.titulo);
+      if(!items.length)return;
+      const parent=document.getElementById('agenda-list');
+      for(const x of items.slice(0,6)){
+        const article=node('article',undefined,'record');
+        article.append(node('span',x.fecha||'Fecha por confirmar','date'));
+        const detail=node('div');
+        detail.append(node('h3',x.titulo));
+        if(x.lugar)detail.append(node('p',x.lugar));
+        if(x.resumen)detail.append(node('p',x.resumen));
+        const link=safeURL(x.enlace);
+        if(link){const a=node('a','Más información ↗','external');a.href=link;a.rel='noopener noreferrer';a.target='_blank';detail.append(a);}
+        article.append(detail);parent.append(article);
+      }
+      document.getElementById('agenda').hidden=false;
+      document.getElementById('nav-agenda').hidden=false;
+    }catch(e){console.warn('Agenda no disponible',e);}
+  }
+  async function noticias(){
+    try{
+      const data=await load('content/noticias.json');
+      if(!Array.isArray(data))return;
+      const items=data.filter(x=>x&&x.publicado===true&&x.titulo&&x.slug);
+      if(!items.length)return;
+      const parent=document.getElementById('noticias-list');
+      for(const x of items.slice(0,3)){
+        const article=node('article',undefined,'news-card');
+        const url=safeURL(x.imagen);
+        if(url){const img=node('img');img.src=url;img.alt='';img.loading='lazy';article.append(img);}
+        if(x.fecha)article.append(node('span',x.fecha,'eyebrow'));
+        article.append(node('h3',x.titulo));
+        if(x.resumen)article.append(node('p',x.resumen));
+        const a=node('a','Leer noticia ↗','external');
+        a.href='noticia.html?slug='+encodeURIComponent(x.slug);article.append(a);
+        parent.append(article);
+      }
+      document.getElementById('actualidad').hidden=false;
+      document.getElementById('nav-actualidad').hidden=false;
+    }catch(e){console.warn('Actualidad no disponible',e);}
+  }
+  void Promise.all([configure(),agenda(),noticias()]);
 })();
 </script>
-<script>document.querySelectorAll(".ev-tab").forEach(b=>{b.addEventListener("click",()=>{const id=b.dataset.show;document.querySelectorAll(".ev-tab").forEach(t=>{let on=t===b;t.classList.toggle("active",on);t.setAttribute("aria-selected",String(on))});document.querySelectorAll(".ev-panel").forEach(p=>p.hidden=p.dataset.panel!==id)})})</script><script>(async function(){
-  function safeUrl(url){
-    if(typeof url!=='string') return null;
-    try { const u=new URL(url,window.location.origin); if(u.protocol==='https:'||u.protocol==='http:') return u.href; } catch(_){ }
-    return null;
-  }
-  async function load(path){const r=await fetch(path,{cache:'no-cache'}); if(!r.ok) throw Error(path); return r.json();}
-  function el(tag,klass,text){const node=document.createElement(tag);if(klass)node.className=klass;if(text!=null)node.textContent=String(text);return node;}
-  try {
-   const cfg=await load('content/sitio.json');
-   const intro=document.getElementById('intro-edicion');
-   if(intro && cfg.introduccion)intro.textContent=cfg.introduccion;
-   if(cfg.informe)document.querySelectorAll('[data-report-link]').forEach(a=>{let url=safeUrl(cfg.informe);if(url)a.href=url;});
-   const contact=document.getElementById('contacto-edicion');if(contact){contact.replaceChildren();
-    if(cfg.contacto && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cfg.contacto)){
-      const a=el('a','cta','Escribir al equipo ↗');a.href='mailto:'+cfg.contacto;contact.append(a);
-    }
-    if(cfg.instagram){const url=safeUrl(cfg.instagram);if(url){const a=el('a','cta','Instagram ↗');a.href=url;a.target='_blank';a.rel='noopener noreferrer';contact.append(a)}}
-    if(!contact.children.length)contact.append(el('p','mensaje-vacio','Pronto publicaremos aquí nuestros canales oficiales de contacto.'));
-   }
-  }catch(e){console.warn('Sin configuración editable del sitio',e)}
-  try {
-    const data=await load('content/agenda.json'), parent=document.getElementById('agenda-edicion');
-    if(Array.isArray(data) && parent){const visibles=data.filter(x=>x&&x.publicado===true&&x.titulo);parent.replaceChildren();
-      for(const x of visibles){
-        const article=el('article','event');article.dataset.category=x.categoria||'encuentros';
-        article.append(el('small','',x.fecha||'Fecha por confirmar'));
-        const main=el('div');main.append(el('h3','',x.titulo));main.append(el('p','',x.resumen||''));
-        let link=safeUrl(x.enlace);if(link){const a=el('a','','Más información ↗');a.href=link;a.target='_blank';a.rel='noopener noreferrer';a.style.textDecoration='underline';main.append(a)}
-        article.append(main);article.append(el('div','right',x.lugar||''));parent.append(article);
-      }
-      if(!visibles.length)parent.append(el('p','mensaje-vacio','La agenda común se está preparando. Pronto encontrarás aquí las actividades del territorio.'));
-      const filters=document.querySelectorAll('.filter');filters.forEach(f=>f.addEventListener('click',()=>{const cat=f.dataset.category;parent.querySelectorAll('.event').forEach(a=>a.hidden=cat!=='all'&&a.dataset.category!==cat)}));
-    }
-  }catch(e){console.warn('Sin agenda editable',e)}
-  try{
-    const data=await load('content/noticias.json'), parent=document.getElementById('noticias-edicion');
-    if(Array.isArray(data) && parent){const visibles=data.filter(x=>x&&x.publicado===true&&x.titulo&&x.slug);parent.replaceChildren();
-      for(const x of visibles){
-        const card=el('article','news');const visual=el('div','news-visual');
-        if(x.imagen){const url=safeUrl(x.imagen);if(url){const pic=document.createElement('img');pic.src=url;pic.alt='Imagen de '+x.titulo;visual.append(pic)}}
-        card.append(visual);card.append(el('small','',x.fecha||'Actualidad'));card.append(el('h3','',x.titulo));card.append(el('p','',x.resumen||''));
-        const a=el('a','leer-mas','Leer noticia ↗');a.href='noticia.html?slug='+encodeURIComponent(x.slug);card.append(a);parent.append(card);
-      }
-      if(!visibles.length)parent.append(el('p','mensaje-vacio','Pronto publicaremos noticias, convocatorias y avances de Pucón Creativo.'));
-    }
-  }catch(e){console.warn('Sin noticias editables',e)}
-})();
-</script></body></html>
+</body>
+</html>
