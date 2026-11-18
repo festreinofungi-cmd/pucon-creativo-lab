@@ -14,7 +14,7 @@ Pucón Creativo es una plataforma territorial de información y articulación pa
 - DNS: administrado en Cloudflare; el dominio permanece registrado en NIC Chile. No se deben alterar los registros DNS desde este repositorio.
 
 ## Arquitectura de contenidos
-- `index.html`: portada, ecosistema, mapeo, agenda, red y participación.
+- `index.html`: portada, síntesis del mapeo y presentación de la iniciativa. Agenda y actualidad se muestran únicamente con registros publicados.
 - `noticia.html`: ficha pública para noticias aprobadas.
 - `content/sitio.json`: introducción, contacto oficial, Instagram e informe.
 - `content/agenda.json`: actividades editables, publicadas solo con `publicado: true`.
@@ -43,7 +43,9 @@ python3 -m http.server 8080
 
 Y abrir `http://localhost:8080`.
 
-## Diseño
+## Diseño y criterio editorial
+La portada prioriza una propuesta clara, tres hallazgos respaldados por el mapeo y el papel de la iniciativa. La lectura profunda se ofrece mediante el informe completo; se evitan secciones vacías y textos redundantes. 
+
 Se conservan como base los activos oficiales de Pucón Creativo. Festival Reino Fungi aparece como antecedente de articulación, no como marca principal del sitio. El archivo `docs/BASE-DISENO.md` documenta el punto de partida y `docs/EVOLUCION-WEB-2026.md` describe la iteración de mejora propuesta.
 
 ## Pendientes estratégicos
